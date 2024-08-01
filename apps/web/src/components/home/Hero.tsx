@@ -8,7 +8,7 @@ const Hero = () => {
         <div className="flex sm:flex-nowrap flex-wrap justify-between items-center max-h-[690px] h-full">
           <div className="">
             <h2 className="font-montserrat pb-7 sm:pb-[26px] text-black text-[44px] sm:text-[75px] not-italic font-medium leading-[111.3%] tracking-[-1.1px] sm:tracking-[-1.875px]">
-              The Ultimate <br /> Note-Taking Experience
+              Sahaya
             </h2>
             <p className="font-montserrat sm:pb-16 max-w-[680px] text-black text-xl sm:text-3xl not-italic font-normal leading-[103.3%] tracking-[-0.5px] sm:tracking-[-0.75px] pb-11">
               UseNotes harnesses the power of artificial intelligence to
