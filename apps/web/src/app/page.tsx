@@ -4,18 +4,31 @@ import Header from "@/components/Header";
 import Benefits from "@/components/home/Benefits";
 import Footer from "@/components/home/Footer";
 import FooterHero from "@/components/home/FooterHero";
-import Hero from "@/components/home/Hero";
+import Hero, { HeroProps } from "@/components/home/Hero";
+import Introduction from "@/components/home/Introduction";
 import Testimonials from "@/components/home/Testimonials";
+import type { NextPage } from "next";
 
-export default function Home() {
+const Home: NextPage = () => {
+  const heroProps: HeroProps = {
+    title: "Revolutionize Your Studying with AI-Powered Textbooks",
+    subtitle: "Get instant answers, personalized learning, and a smarter way to study",
+    heroImage: "/images/hero.png",
+    callToAction: "Try it now",
+    callToActionLink: "/upload-textbook",
+  };
+
   return (
     <main>
       <Header />
-      <Hero />
+      <Hero {...heroProps} />
+      <Introduction />
       <Benefits />
       <Testimonials />
       <FooterHero />
       <Footer />
     </main>
   );
-}
+};
+
+export default Home;
