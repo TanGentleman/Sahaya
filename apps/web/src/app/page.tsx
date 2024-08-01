@@ -15,7 +15,7 @@ const Home: NextPage = () => {
     subtitle: "Get instant answers, personalized learning, and a smarter way to study",
     heroImage: "/images/hero.png",
     callToAction: "Try it now",
-    callToActionLink: "/upload-textbook",
+    callToActionLink: "/notes",
   };
 
   return (
