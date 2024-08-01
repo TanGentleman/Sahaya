@@ -2,27 +2,24 @@ import Image from "next/image";
 
 const benefits = [
   {
-    title: "Effortless Note-Taking",
-    description: "Capture thoughts effortlessly with our intuitive interface",
-    image: "/images/goodNews.png",
+    title: "Effortless Questioning",
+    description: "Ask questions and get instant answers from your textbook",
+    image: "/images/question.png",
   },
   {
-    title: "Seamless Synchronization",
-    description:
-      "Access your notes anytime, anywhere, with seamless cloud synchronization.",
-    image: "/images/cloudSync.png",
-  },
-  {
-    title: "Enhanced Productivity",
-    description:
-      "Let AI handle organization, so you can focus on what matters most.",
-    image: "/images/googleCalander.png",
+    title: "Personalized Learning",
+    description: "Get tailored learning recommendations based on your studying style",
+    image: "/images/personalized.png",
   },
   {
     title: "AI-Powered Insights",
-    description:
-      "Gain valuable insights with smart analytics based on your note patterns.",
-    image: "/images/bot.png",
+    description: "Gain valuable insights from your textbook with AI-powered analytics",
+    image: "/images/insights.png",
+  },
+  {
+    title: "Seamless Accessibility",
+    description: "Access your textbook from anywhere, on any device",
+    image: "/images/access.png",
   },
 ];
 
@@ -41,7 +38,7 @@ const Benefits = () => {
           Benefits
         </p>
         <h3 className=" text-black text-3xl sm:text-[57px] not-italic font-medium leading-[90.3%] tracking-[-1.425px] font-montserrat text-center pb-[46px] sm:pb-[87px]">
-          Why Choose UseNotes
+          Why Choose YourTextbook
         </h3>
 
         <div className="relative">
