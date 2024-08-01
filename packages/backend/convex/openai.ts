@@ -20,7 +20,8 @@ export const summary = internalAction({
   handler: async (ctx, { id, title, content }) => {
     const prompt = `Take in the following note and return a summary: Title: ${title}, Note content: ${content}`;
 
-    const apiKey = process.env.OPENAI_API_KEY;
+    // const apiKey = process.env.OPENAI_API_KEY;
+    const apiKey = process.env.TOGETHER_API_KEY;
     if (!apiKey) {
       const error = missingEnvVariableUrl(
         "OPENAI_API_KEY",
@@ -33,17 +34,21 @@ export const summary = internalAction({
       });
       return;
     }
-    const openai = new OpenAI({ apiKey });
+    const baseURL = "https://api.together.xyz/v1" 
+    // const modelName = "google/gemma-2-27b-it"
+    const modelName = "meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo"
+
+    const openai = new OpenAI({ baseURL, apiKey });
     const output = await openai.chat.completions.create({
       messages: [
         {
           role: "system",
           content:
-            "You are a helpful assistant designed to output JSON in this format: {summary: string}",
+            'You are a helpful assistant designed to output JSON in this format: {"summary": string}.',
         },
         { role: "user", content: prompt },
       ],
-      model: "gpt-4-1106-preview",
+      model: modelName,
       response_format: { type: "json_object" },
     });
 
