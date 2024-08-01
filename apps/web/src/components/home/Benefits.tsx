@@ -70,7 +70,7 @@ const Benefits = () => {
                     alt="benefit"
                     className="sm:w-[100px] w-[58px]"
                   />
-                  <p className="text-center text-gray-500 text-sm mt-2">Placeholder</p>
+                  <p className="text-center text-gray-500 text-sm mt-2">Clever image here</p>
                 </div>
                 <div className="">
                   <h4 className="text-black text-[24px] sm:text-[42px] not-italic font-medium leading-[90.3%] tracking-[-1.05px] pb-2 sm:pb-6 font-montserrat">

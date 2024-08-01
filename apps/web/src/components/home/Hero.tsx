@@ -16,7 +16,7 @@ const HeroImage: FC<{ src: string }> = ({ src }) => {
       <div className="absolute inset-0 flex justify-center items-center bg-blue-300 rounded-[13px]">
         <Image src={src} width={541} height={673} alt="hero" loading="lazy" />
         <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-2">
-          <p className="text-sm">Placeholder</p>
+          <p className="text-sm">Placeholder (Either simple, or diagram of flow)</p>
         </div>
       </div>
     </div>
