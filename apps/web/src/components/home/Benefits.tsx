@@ -4,22 +4,22 @@ const benefits = [
   {
     title: "Effortless Questioning",
     description: "Ask questions and get instant answers from your textbook",
-    image: "/images/question.png",
+    image: "/images/star.svg",
   },
   {
     title: "Personalized Learning",
     description: "Get tailored learning recommendations based on your studying style",
-    image: "/images/personalized.png",
+    image: "/images/star.svg",
   },
   {
     title: "AI-Powered Insights",
     description: "Gain valuable insights from your textbook with AI-powered analytics",
-    image: "/images/insights.png",
+    image: "/images/star.svg",
   },
   {
     title: "Seamless Accessibility",
     description: "Access your textbook from anywhere, on any device",
-    image: "/images/access.png",
+    image: "/images/star.svg",
   },
 ];
 
@@ -70,6 +70,7 @@ const Benefits = () => {
                     alt="benefit"
                     className="sm:w-[100px] w-[58px]"
                   />
+                  <p className="text-center text-gray-500 text-sm mt-2">Placeholder</p>
                 </div>
                 <div className="">
                   <h4 className="text-black text-[24px] sm:text-[42px] not-italic font-medium leading-[90.3%] tracking-[-1.05px] pb-2 sm:pb-6 font-montserrat">
