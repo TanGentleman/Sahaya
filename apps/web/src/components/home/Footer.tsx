@@ -23,14 +23,12 @@ export interface FooterProps {
   slogan: string;
   description: string;
   copyrightNotice: string;
-  iconCredit: string;
 }
 
 const Footer: React.FC<FooterProps> = ({
   slogan,
   description,
   copyrightNotice,
-  iconCredit,
 }) => {
   return (
     <>
@@ -48,7 +46,7 @@ const Footer: React.FC<FooterProps> = ({
               {description}
             </p>
             <p className="text-gray-600 font-inter text-base not-italic font-normal leading-6">
-              {copyrightNotice} Powered by <a href="https://convex.dev/templates">Convex</a>.
+              {copyrightNotice} Icons by Icons8. Powered by <a href="https://convex.dev/templates">Convex</a>.
             </p>
           </div>
         </div>
@@ -71,7 +69,7 @@ const Footer: React.FC<FooterProps> = ({
         </div>
         <p className="text-[#667085] font-inter text-center text-base not-italic font-light leading-[18px] py-11">
           {copyrightNotice} <br />
-          <span className="mt-1"> {iconCredit} Powered by <a href="https://convex.dev/templates">Convex</a>.</span>
+          <span className="mt-1"> Icons by Icons8. Powered by <a href="https://convex.dev/templates">Convex</a>.</span>
         </p>
       </div>
     </>
