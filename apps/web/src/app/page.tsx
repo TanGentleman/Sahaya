@@ -19,7 +19,6 @@ const Home: NextPage = () => {
     slogan: "Learning doesn't have to be scary!",
     description: "TextbookAI is here to help you learn better and faster.",
     copyrightNotice: "© 2024 TextbookAI.",
-    iconCredit: "Icons by Icons8",
   };
 
   return (
@@ -28,7 +27,7 @@ const Home: NextPage = () => {
       <Hero {...heroProps} />
       <Introduction />
       <Benefits />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <FooterHero />
       <Footer {...footerProps} />
     </main>
