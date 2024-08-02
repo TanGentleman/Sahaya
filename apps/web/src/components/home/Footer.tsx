@@ -1,7 +1,6 @@
 import React from "react";
 import Logo from "../common/Logo";
 import Menu from "../common/Menu";
-
 const menuItems = [
   {
     title: "Home",
@@ -20,8 +19,19 @@ const menuItems = [
     url: "#reviews",
   },
 ];
+export interface FooterProps {
+  slogan: string;
+  description: string;
+  copyrightNotice: string;
+  iconCredit: string;
+}
 
-const Footer = () => {
+const Footer: React.FC<FooterProps> = ({
+  slogan,
+  description,
+  copyrightNotice,
+  iconCredit,
+}) => {
   return (
     <>
       <div className="container hidden sm:block py-12">
@@ -31,15 +41,14 @@ const Footer = () => {
         </div>
         <div className="pt-8 border-t-[#929292] border-t border-solid">
           <h3 className="text-gray-900 text-xl not-italic font-semibold leading-[30px] font-montserrat pb-2">
-            Take more efficient notes with TextbookAI
+            {slogan}
           </h3>
           <div className="flex justify-between">
             <p className="text-gray-600 font-montserrat text-base not-italic font-normal leading-6">
-              Save countless hours of note-taking and organize your notes
-              easier.
+              {description}
             </p>
             <p className="text-gray-600 font-inter text-base not-italic font-normal leading-6">
-              © 2024 TextbookAI. All rights reserved.
+              {copyrightNotice}
             </p>
           </div>
         </div>
@@ -50,11 +59,10 @@ const Footer = () => {
           <div className="flex flex-col gap-6">
             <Logo />
             <h3 className="text-[#101828] text-base not-italic font-semibold leading-[18px] font-montserrat">
-              Take more efficient notes with TextbookAI
+              {slogan}
             </h3>
             <p className="text-[#101828] font-montserrat text-base not-italic font-light leading-[18px]">
-              Save countless hours of note-taking and organize your notes
-              easier.
+              {description}
             </p>
           </div>
           <div className="min-w-[100px]">
@@ -62,12 +70,11 @@ const Footer = () => {
           </div>
         </div>
         <p className="text-[#667085] font-inter text-center text-base not-italic font-light leading-[18px] py-11">
-          © 2024 TextbookAI. All rights reserved. <br />
-          <span className="mt-1"> Icons by Icons8</span>
+          {copyrightNotice} <br />
+          <span className="mt-1"> {iconCredit}</span>
         </p>
       </div>
     </>
   );
 };
-
 export default Footer;

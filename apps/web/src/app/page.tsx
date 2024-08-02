@@ -1,8 +1,6 @@
-"use client";
-
 import Header from "@/components/Header";
 import Benefits from "@/components/home/Benefits";
-import Footer from "@/components/home/Footer";
+import Footer, { FooterProps } from "@/components/home/Footer";
 import FooterHero from "@/components/home/FooterHero";
 import Hero, { HeroProps } from "@/components/home/Hero";
 import Introduction from "@/components/home/Introduction";
@@ -17,6 +15,12 @@ const Home: NextPage = () => {
     callToAction: "Try it now",
     callToActionLink: "/notes",
   };
+  const footerProps: FooterProps = {
+    slogan: "Take more efficient notes with TextbookAI",
+    description: "Save countless hours of note-taking and organize your notes easier.",
+    copyrightNotice: "2024 TextbookAI. All rights reserved.",
+    iconCredit: "Icons by Icons8",
+  };
 
   return (
     <main>
@@ -26,7 +30,7 @@ const Home: NextPage = () => {
       <Benefits />
       <Testimonials />
       <FooterHero />
-      <Footer />
+      <Footer {...footerProps} />
     </main>
   );
 };
