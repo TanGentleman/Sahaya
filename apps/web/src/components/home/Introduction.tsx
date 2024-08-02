@@ -8,7 +8,7 @@ const Introduction = () => {
           Welcome to TextbookAI
         </h2>
         <p className="font-montserrat pb-2 text-black text-[17px] sm:text-3xl not-italic font-normal leading-[90.3%] tracking-[-0.75px] text-center">
-          Revolutionize your studying with AI-powered textbooks. Get instant answers, personalized learning, and a smarter way to study.
+          Make the leap to AI-powered textbooks. Index your textbook and get started today!
         </p>
         <Image
           src={"/images/logo.png"}
@@ -17,7 +17,7 @@ const Introduction = () => {
           alt="textbook"
           className="mx-auto"
         />
-        <p className="text-center text-gray-500 text-sm mt-2">Image of a textbook</p>
+        <p className="text-center text-gray-500 text-sm mt-2">Flow chart for obtaining Ch.6 problem set and answers from a Math textbook.</p>
       </div>
     </section>
   );

@@ -16,9 +16,9 @@ const Home: NextPage = () => {
     callToActionLink: "/notes",
   };
   const footerProps: FooterProps = {
-    slogan: "Take more efficient notes with TextbookAI",
-    description: "Save countless hours of note-taking and organize your notes easier.",
-    copyrightNotice: "2024 TextbookAI. All rights reserved.",
+    slogan: "Learning doesn't have to be scary!",
+    description: "TextbookAI is here to help you learn better and faster.",
+    copyrightNotice: "© 2024 TextbookAI.",
     iconCredit: "Icons by Icons8",
   };
 
