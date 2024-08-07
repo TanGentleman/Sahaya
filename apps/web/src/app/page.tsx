@@ -12,7 +12,7 @@ const Home: NextPage = () => {
     title: "Revolutionize Your Studying with AI-Powered Textbooks",
     subtitle: "Get instant, contextualized answers from any textbook. Learning should be friendly!",
     heroImage: "/images/hero.png",
-    callToAction: "Try it now",
+    callToAction: "Try it now!",
     callToActionLink: "/notes",
   };
   const footerProps: FooterProps = {
