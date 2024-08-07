@@ -11,6 +11,7 @@ import {
 } from "./dropdown-menu";
 import Link from "next/link";
 import { useClerk } from "@clerk/clerk-react";
+import Image from 'next/image';
 
 export function UserNav({
   image,
@@ -28,10 +29,16 @@ export function UserNav({
       <DropdownMenuTrigger asChild>
         <Button variant="ghost" className="relative h-10 w-10 rounded-full">
           <Avatar className="h-10 w-10">
-            <AvatarImage src={image} alt={name} />
+          <AvatarImage src="/images/bot.png" alt={name} />
+            {/* <AvatarFallback>
+              <Image src="/images/bot.png" alt={name} width={40} height={40} />
+            </AvatarFallback>; */}
+
+            
+            {/* <AvatarImage src={image} alt={name} />
             <AvatarFallback>
               <img src={"/profile.png"} alt={name} />
-            </AvatarFallback>
+            </AvatarFallback> */}
           </Avatar>
         </Button>
       </DropdownMenuTrigger>
