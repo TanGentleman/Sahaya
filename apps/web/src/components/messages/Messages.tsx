@@ -54,14 +54,31 @@ const ChatMessageComponent = ({ message, theme }: { message: ChatMessage; theme:
   );
 };
 
+// const LoadingIcon = () => {
+//   return (
+//     <div className="flex justify-center items-center h-screen">
+//       <div className="flex flex-col items-center">
+//         <div className="animate-spin rounded-full h-10 w-10 border-b-2 border-blue-500" />
+//         <span className="text-lg font-bold text-gray-600 mt-4">
+//           Loading...
+//         </span>
+//       </div>
+//     </div>
+//   );
+// };
 const LoadingIcon = () => {
   return (
     <div className="flex justify-center items-center h-screen">
       <div className="flex flex-col items-center">
-        <div className="animate-spin rounded-full h-10 w-10 border-b-2 border-blue-500" />
+        <div className="animate-spin rounded-full h-12 w-12 border-4 border-pink-500 border-t-transparent" />
         <span className="text-lg font-bold text-gray-600 mt-4">
-          Loading...
+          Purr-haps just a moment...
         </span>
+        <div className="flex justify-center mt-2">
+          <div className="h-2 w-2 rounded-full bg-pink-500 animate-bounce mr-2" />
+          <div className="h-2 w-2 rounded-full bg-pink-500 animate-bounce delay-100 mr-2" />
+          <div className="h-2 w-2 rounded-full bg-pink-500 animate-bounce delay-200" />
+        </div>
       </div>
     </div>
   );
