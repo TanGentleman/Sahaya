@@ -15,10 +15,10 @@ type NavigationItem = {
 };
 
 const navigation: NavigationItem[] = [
-  { name: "Benefits", href: "#Benefits", current: true },
+  { name: "Benefits", href: "#benefits", current: true },
   // { name: "Reviews", href: "#reviews", current: false },
   // { name: "Playground", href: "/playground", current: false },
-  { name: "About Us", href: "#about", current: false },
+  { name: "About Us", href: "#about", current: true },
   { name: "Events", href: "/events", current: false },
 ];
 
@@ -39,7 +39,7 @@ export default function Header() {
                 <div className="sm:flex hidden flex-shrink-0 items-center">
                   <Logo />
                 </div>
-                {pathname === "/" && (
+                {(pathname === "/" || pathname === "/events") && (
                   <div className="flex flex-1 items-center justify-center ">
                     <div className="hidden sm:ml-6 sm:block">
                       <ul className="flex space-x-28">

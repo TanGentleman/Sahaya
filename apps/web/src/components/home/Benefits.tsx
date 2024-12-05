@@ -25,7 +25,7 @@ const benefits = [
 
 const Benefits = () => {
   return (
-    <section id="Where we Shine" className="relative pointer-events-none">
+    <section id="benefits" className="relative pointer-events-none">
       <Image
         src={"/images/blue-circle.svg"}
         width={503}
@@ -34,11 +34,8 @@ const Benefits = () => {
         className="absolute hidden sm:block -left-40 -top-48 h-[531px]"
       />
       <div className="container py-16 px-2 md:px-0">
-        <p className="text-black text-[17px] sm:text-3xl not-italic font-medium leading-[90.3%] tracking-[-0.75px] text-center font-montserrat pb-2 sm:pb-[18px]">
-          Benefits
-        </p>
         <h3 className=" text-black text-3xl sm:text-[57px] not-italic font-medium leading-[90.3%] tracking-[-1.425px] font-montserrat text-center pb-[46px] sm:pb-[87px]">
-          Why Choose TextbookAI
+          Why Choose Us
         </h3>
 
         <div className="relative">
