@@ -13,12 +13,12 @@ const Home: NextPage = () => {
     title: "Accessibility Tools for Educators",
     subtitle: "The sidekick you didn't know you needed.",
     heroImage: "/images/prof.jpg",
-    callToAction: "Try Notes",
+    callToAction: "Notes Demo",
     callToActionLink: "/notes",
   };
   const footerProps: FooterProps = {
-    slogan: "Learning doesn't have to be scary!",
-    description: "TextbookAI is here to help you learn better and faster.",
+    slogan: "Join us!",
+    description: "We're always looking for new opportunities to connect with educators.",
     copyrightNotice: "© 2024 Sahaya LLC",
   };
 

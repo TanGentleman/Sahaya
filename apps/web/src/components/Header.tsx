@@ -19,6 +19,7 @@ const navigation: NavigationItem[] = [
   // { name: "Reviews", href: "#reviews", current: false },
   // { name: "Playground", href: "/playground", current: false },
   { name: "About Us", href: "#about", current: false },
+  { name: "Events", href: "/events", current: false },
 ];
 
 export default function Header() {
@@ -64,7 +65,7 @@ export default function Header() {
                         type="button"
                         className=" text-white text-center text-xl not-italic font-normal leading-[normal] font-montserrat px-[22px] py-[11px] button"
                       >
-                        See your Notes
+                        Try Me
                       </button>
                     </Link>
                     <UserNav

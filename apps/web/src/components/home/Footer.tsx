@@ -7,16 +7,16 @@ const menuItems = [
     url: "/",
   },
   {
-    title: "Features",
-    url: "#Benefits",
+    title: "About Us",
+    url: "#about",
   },
   {
     title: "Get Started",
     url: "/notes",
   },
   {
-    title: "Reviews",
-    url: "#reviews",
+    title: "Events",
+    url: "/events",
   },
 ];
 export interface FooterProps {
