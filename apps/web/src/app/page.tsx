@@ -5,29 +5,31 @@ import FooterHero from "@/components/home/FooterHero";
 import Hero, { HeroProps } from "@/components/home/Hero";
 import Introduction from "@/components/home/Introduction";
 import Testimonials from "@/components/home/Testimonials";
+import About from "@/components/home/About";
 import type { NextPage } from "next";
 
 const Home: NextPage = () => {
   const heroProps: HeroProps = {
-    title: "Revolutionize Your Studying with AI-Powered Textbooks",
-    subtitle: "Get instant, contextualized answers from any textbook. Learning should be friendly!",
-    heroImage: "/images/hero.png",
-    callToAction: "Try it now",
+    title: "Accessibility Tools for Educators",
+    subtitle: "The sidekick you didn't know you needed.",
+    heroImage: "/images/prof.jpg",
+    callToAction: "Try Notes",
     callToActionLink: "/notes",
   };
   const footerProps: FooterProps = {
     slogan: "Learning doesn't have to be scary!",
     description: "TextbookAI is here to help you learn better and faster.",
-    copyrightNotice: "© 2024 TextbookAI.",
+    copyrightNotice: "© 2024 Sahaya LLC",
   };
 
   return (
     <main>
       <Header />
       <Hero {...heroProps} />
-      <Introduction />
+      {/* <Introduction /> */}
       <Benefits />
       {/* <Testimonials /> */}
+      <About />
       <FooterHero />
       <Footer {...footerProps} />
     </main>

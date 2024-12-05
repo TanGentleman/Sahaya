@@ -2,30 +2,30 @@ import Image from "next/image";
 
 const benefits = [
   {
-    title: "Effortless Questioning",
-    description: "Ask questions and get instant answers from your textbook",
+    title: "Find It Fast",
+    description: "Quickly locate that chart, slide, or file from last week—no digging required",
     image: "/images/star.svg",
   },
   {
-    title: "Personalized Learning",
-    description: "Get tailored learning recommendations based on your studying style",
+    title: "Research Made Easy", 
+    description: "Access reliable sources and materials for your next lecture in seconds",
     image: "/images/star.svg",
   },
   {
-    title: "AI-Powered Insights",
-    description: "Gain valuable insights from your textbook with AI-powered analytics",
+    title: "Create with Confidence",
+    description: "Effortlessly generate engaging lectures and lesson plans with AI-powered support",
     image: "/images/star.svg",
   },
   {
-    title: "Seamless Accessibility",
-    description: "Access your textbook from anywhere, on any device",
+    title: "Tailored to You",
+    description: "Seamlessly integrate your syllabus, calendar, and past assignments to fit your unique teaching style",
     image: "/images/star.svg",
   },
 ];
 
 const Benefits = () => {
   return (
-    <section id="Benefits" className="relative pointer-events-none">
+    <section id="Where we Shine" className="relative pointer-events-none">
       <Image
         src={"/images/blue-circle.svg"}
         width={503}

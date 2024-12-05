@@ -16,7 +16,9 @@ type NavigationItem = {
 
 const navigation: NavigationItem[] = [
   { name: "Benefits", href: "#Benefits", current: true },
-  { name: "Reviews", href: "#reviews", current: false },
+  // { name: "Reviews", href: "#reviews", current: false },
+  // { name: "Playground", href: "/playground", current: false },
+  { name: "About Us", href: "#about", current: false },
 ];
 
 export default function Header() {

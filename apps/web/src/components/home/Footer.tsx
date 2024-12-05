@@ -46,7 +46,8 @@ const Footer: React.FC<FooterProps> = ({
               {description}
             </p>
             <p className="text-gray-600 font-inter text-base not-italic font-normal leading-6">
-              {copyrightNotice} Icons by Icons8. Powered by <a href="https://convex.dev/templates">Convex</a>.
+              {copyrightNotice} 
+              {/* Icons by Icons8. Powered by <a href="https://convex.dev/templates">Convex</a>. */}
             </p>
           </div>
         </div>

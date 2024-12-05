@@ -12,14 +12,14 @@ export interface HeroProps {
 
 const HeroImage: FC<{ src: string }> = ({ src }) => {
   return (
-    <div className="relative max-w-[570px] w-full h-[380px] sm:h-[680px]">
-      <div className="absolute inset-0 flex justify-center items-center bg-blue-300 rounded-[13px]">
-        <Image src={src} width={541} height={673} alt="hero" loading="lazy" />
-        <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-2">
-          <p className="text-sm">Placeholder (Either simple, or diagram of flow)</p>
-        </div>
-      </div>
-    </div>
+    <Image 
+      src={src} 
+      width={541} 
+      height={673} 
+      alt="hero" 
+      loading="lazy"
+      className="rounded-[13px] bg-blue-300" 
+    />
   );
 };
 
@@ -52,26 +52,26 @@ const Hero: FC<HeroProps> = ({ title, subtitle, heroImage, callToAction, callToA
         <div className="flex flex-wrap justify-center items-center mt-16 sm:mt-36">
           <div className="w-full sm:w-1/2 xl:w-1/3 p-6 sm:p-12">
             <h3 className="font-montserrat text-black text-xl sm:text-2xl not-italic font-medium leading-[103.3%] tracking-[-0.5px] sm:tracking-[-0.75px]">
-              Effortless question-answering
+              Automate time-consuming research
             </h3>
             <p className="font-montserrat text-black text-lg sm:text-xl not-italic font-normal leading-[103.3%] tracking-[-0.5px] sm:tracking-[-0.75px]">
-              Get answers to your questions directly from your textbook
+              PLACEHOLDER
             </p>
           </div>
           <div className="w-full sm:w-1/2 xl:w-1/3 p-6 sm:p-12">
             <h3 className="font-montserrat text-black text-xl sm:text-2xl not-italic font-medium leading-[103.3%] tracking-[-0.5px] sm:tracking-[-0.75px]">
-              Automated workflows
+              Build a real-time knowledge base
             </h3>
             <p className="font-montserrat text-black text-lg sm:text-xl not-italic font-normal leading-[103.3%] tracking-[-0.5px] sm:tracking-[-0.75px]">
-              Simplify studying with automated workflows for finding practice problems, summaries, and more
+              PLACEHOLDER
             </p>
           </div>
           <div className="w-full sm:w-1/2 xl:w-1/3 p-6 sm:p-12">
             <h3 className="font-montserrat text-black text-xl sm:text-2xl not-italic font-medium leading-[103.3%] tracking-[-0.5px] sm:tracking-[-0.75px]">
-              Personalized learning experience
+              Create lectures, assignments, and review materials on the fly
             </h3>
             <p className="font-montserrat text-black text-lg sm:text-xl not-italic font-normal leading-[103.3%] tracking-[-0.5px] sm:tracking-[-0.75px]">
-              Get a tailored learning experience with our AI-powered interface
+              PLACEHOLDER
             </p>
           </div>
         </div>
