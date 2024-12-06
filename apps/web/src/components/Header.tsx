@@ -15,10 +15,10 @@ type NavigationItem = {
 };
 
 const navigation: NavigationItem[] = [
-  { name: "Benefits", href: "#benefits", current: true },
+  { name: "Benefits", href: "/#benefits", current: false },
   // { name: "Reviews", href: "#reviews", current: false },
   // { name: "Playground", href: "/playground", current: false },
-  { name: "About Us", href: "#about", current: true },
+  { name: "About Us", href: "/#about", current: false },
   { name: "Events", href: "/events", current: false },
 ];
 

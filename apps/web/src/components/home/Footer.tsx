@@ -8,7 +8,7 @@ const menuItems = [
   },
   {
     title: "About Us",
-    url: "#about",
+    url: "/#about",
   },
   {
     title: "Get Started",
